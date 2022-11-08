@@ -9,7 +9,7 @@ generateDOg.addEventListener('click', () => {
 		.then((data) => {
 			createImg(data.message);
 		})
-		.catch((err) => (list.innerText = 'Something went wrong'));
+		.catch((err) => (dogGeneratorBox.innerText = 'Something went wrong'));
 });
 
 function createImg(url) {
